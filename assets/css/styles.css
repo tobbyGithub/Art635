@@ -40,7 +40,7 @@ a:hover {
 a.btn {
   color: #fff;
   border-radius: 30px;
-  background-color:  #e3561b;
+  background-color: #e3561b;
   padding: 15px 20px;
   text-align: center;
   line-height: 2em;
@@ -50,7 +50,7 @@ a.btn {
 hr {
   width: 150px;
   height: 2px;
-  background-color:  #e3561b;
+  background-color: #e3561b;
   border: 0;
   margin-bottom: 5%;
   margin-left: auto;
@@ -62,13 +62,16 @@ h1 {
   font: light;
 }
 
+section{
+  display:block;
+}
 /* ----------------------------------------- */
 
 header {
   position: relative;
   z-index: 10;
   width: 100%;
-  color:  #e3561b;
+  color: #e3561b;
   padding: 35px 100px;
   background-color: white;
   display: flex;
@@ -136,7 +139,7 @@ header nav li:last-child {
 }
 
 .red {
-  color:  #e3561b;
+  color: #e3561b;
 }
 
 /*----------------
@@ -184,7 +187,7 @@ header nav li:last-child {
 ----------------*/
 .prizes {
   width: 100%;
-padding:0;
+  padding: 0;
   display: flex;
   margin-bottom: 5%;
   align-items: center;
@@ -192,31 +195,39 @@ padding:0;
 
 .first {
   background-color: #e3561b;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
   display: block;
   text-align: center;
   align-items: center;
   flex-basis: 55%;
   height: 454px;
-
+  color: white;
 }
 .second {
+  padding-right: 5%;
+  padding-left: 5%;
   display: block;
   height: 357px;
   align-items: center;
+  padding-top: 5%;
+  text-align: center;
   background-color: rgba(227, 86, 27, 0.05);
   flex-basis: 45%;
 }
 
 
+.other-prizes{
+  padding: 35px 100px;
+}
 
-
-
-
-
+.title{
+  color: black;
+}
 /*----------------
 footer
 ----------------*/
-
 
 footer {
   display: flex;
