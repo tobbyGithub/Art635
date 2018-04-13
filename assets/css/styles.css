@@ -18,6 +18,7 @@ body {
   margin: auto;
   font: normal 16px "Open Sans", sans-serif;
   color: #555;
+  position: relative;
   background-color: white;
 }
 
@@ -163,6 +164,7 @@ header nav li:last-child {
 
 .title {
   font-size: 200%;
+  font-weight: lighter;
   margin-bottom: 0;
   color: #e3561b;
 }
@@ -185,8 +187,9 @@ header nav li:last-child {
   justify-content: space-between;
   margin-bottom: 5%;
 }
-.one fac {
+.one-fac {
   display: block;
+  margin-right: 3%;
 }
 
 /*----------------
@@ -196,6 +199,7 @@ header nav li:last-child {
   width: 100%;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 5%;
   align-items: center;
 }
@@ -218,7 +222,7 @@ header nav li:last-child {
   display: block;
   height: 357px;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 2%;
   text-align: center;
   background-color: rgba(227, 86, 27, 0.05);
   flex-basis: 45%;
@@ -251,6 +255,13 @@ header nav li:last-child {
 /*----------------
 footer
 ----------------*/
+.face2{
+  position: absolute;
+    float: left;
+    margin-top: -8%;
+    z-index: 2;
+    left: 0;
+}
 
 footer {
   display: flex;
@@ -260,6 +271,8 @@ footer {
   color: #fff;
   background-color: #414a4f;
   padding: 60px 0;
+  position: relative;
+  z-index: 3;
 }
 
 footer ul {
@@ -294,6 +307,7 @@ footer p a {
     padding: 80px 15px;
   }
 }
+
 
 /*----------------
  utility classes
