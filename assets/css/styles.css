@@ -2,11 +2,15 @@
  	General
 -------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 body {
   background-color: #f3f3f3;
@@ -14,8 +18,9 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 80vw;
   margin: auto;
+  margin-top:0;
   font: normal 16px "Open Sans", sans-serif;
   color: #555;
   position: relative;
@@ -76,9 +81,10 @@ section{
 /* ----------------------------------------- */
 
 header {
-  position: relative;
+  position: fixed;
+  margin-top:0;
   z-index: 10;
-  width: 100%;
+  width: 80vw;
   color: #e3561b;
   padding: 35px 100px;
   background-color: white;
@@ -118,9 +124,9 @@ header nav li:last-child {
 ----------------*/
 
 .hero {
-  margin-top: 40px;
   position: relative;
-  top: 20px;
+  top: 50px;
+  padding-top: 5%;
   right: 0;
   display: flex;
   flex-direction: row;
@@ -140,14 +146,13 @@ header nav li:last-child {
 
 .hero .hero-image {
   position: relative;
-  z-index: 10;
-  bottom: -56px;
+  z-index: 5;
   margin-left: 10%;
   flex: 1;
 }
 
 .red {
-  color: #e3561b;
+  color: #e3561b !important;
 }
 
 /*----------------
@@ -155,7 +160,7 @@ header nav li:last-child {
 ----------------*/
 .our-work {
   background-color: rgba(227, 86, 27, 0.05);
-  padding: 5% 20%;
+  padding: 5% 15%;
   display: block;
   text-align: center;
   justify-content: center;
@@ -163,33 +168,37 @@ header nav li:last-child {
 }
 
 .title {
+  font-family: 'Arapey', serif;
   font-size: 200%;
   font-weight: lighter;
   margin-bottom: 0;
   color: #e3561b;
 }
 
+.title0{
+
+}
 /*----------------
  	Facilitators Section
 ----------------*/
 .Facilitators {
-  padding: 5% 20%;
+  display: flex;
+  padding: 5% 15%;
   display: block;
   text-align: center;
-  justify-content: center;
   margin: auto;
 }
 
 .fac-pics {
   display: flex;
-  flex-basis: 100%;
+  flex: 1;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 5%;
 }
 .one-fac {
   display: block;
-  margin-right: 3%;
 }
 
 /*----------------
