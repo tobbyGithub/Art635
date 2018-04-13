@@ -57,6 +57,13 @@ hr {
   margin-right: auto;
 }
 
+.leftline{
+  position: absolute;
+  margin-left: 2%;
+  background-color:black;
+
+}
+
 h1 {
   font-size: 300%;
   font: light;
@@ -219,11 +226,27 @@ header nav li:last-child {
 
 
 .other-prizes{
-  padding: 35px 100px;
+  padding: 4% 100px;
 }
+
+.other-prizes ul  {
+  list-style: circle;
+}
+.other-prizes ul li {
+  padding: 0.5% 0;
+} 
+.other-prizes p{
+  text-align:left; 
+ }
 
 .title{
   color: black;
+}
+
+.grey-bg{
+  background-color: rgba(216, 216, 216, 0.13);
+  padding-left:  30%;
+  
 }
 /*----------------
 footer
