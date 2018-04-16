@@ -2,34 +2,99 @@
  	General
 -------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Arapey');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Arapey");
+/*-------------
+bootstrap reset
+-------------*/
+
+.bg-primary {
+  background-color: white !important;
+}
+
+.red {
+  color: #e3561b;
+}
+
+.white {
+  color: white;
+}
+
+.bggrey {
+  background-color: rgba(173, 173, 173, 0.055);
+}
+
+.bglightred {
+  background-color: rgba(255, 213, 213, 0.37);
+  
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
+.thefac{
+  justify-content: center;
+}
+
+.p10 {
+  padding: 8%;
+}
+.p20 {
+  padding: 16%;
+}
+
+.border-red{
+  border: 1px red solid;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #555;
 }
-
-
 
 body {
   background-color: #f3f3f3;
+  font: normal 16px "Open Sans", sans-serif;
   height: 100vh;
+  color: #555;
 }
 
 .container {
-  max-width: 80vw;
   margin: auto;
-  margin-top:0;
   font: normal 16px "Open Sans", sans-serif;
   color: #555;
   position: relative;
   background-color: white;
 }
 
-ul,
-nav {
+/* nav syling */
+
+.row {
+  /* border: red 1px solid; */
+}
+
+.navbar {
+  background: #fff;
+}
+
+ul {
   list-style: none;
+}
+
+.logo {
+  position: absolute;
+  display: none; 
+  top: -23px;
+  left: 5%;
+  background: url("../img/logo.png") no-repeat;
+  width: 132px;
+  height: 90px;
+  margin: 0;
 }
 
 a {
@@ -41,13 +106,15 @@ a {
 
 a:hover {
   opacity: 1;
+  color: black;
+  font: 500;
 }
 
 a.btn {
   color: #fff;
   border-radius: 30px;
   background-color: #e3561b;
-  padding: 15px 20px;
+  padding: 10px 20px;
   text-align: center;
   line-height: 2em;
   margin: 20px 0;
@@ -58,154 +125,29 @@ hr {
   height: 2px;
   background-color: #e3561b;
   border: 0;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.leftline{
+hrleft{
   position: absolute;
-  margin-left: 2%;
-  background-color:black;
-
-}
-
-h1 {
-  font-size: 300%;
-  font: light;
-}
-
-section{
-  display:block;
-}
-/* ----------------------------------------- */
-
-header {
-  position: fixed;
-  margin-top:0;
-  z-index: 10;
-  width: 80vw;
-  color: #e3561b;
-  padding: 35px 100px;
-  background-color: white;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-header .logo {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  background: url("../img/logo.png") no-repeat;
-  width: 180px;
-  height: 100px;
-  margin: 0;
-}
-
-header nav {
-  display: flex;
-}
-
-header nav li {
-  margin: 0 15px;
-}
-
-header nav li:first-child {
   margin-left: 0;
 }
-
-header nav li:last-child {
-  margin-right: 0;
+.leftline {
+  background-color: black;
 }
 
-/*----------------
- 	Hero Section
-----------------*/
-
-.hero {
-  position: relative;
-  top: 50px;
-  padding-top: 5%;
-  right: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  min-height: 4 0vh;
-  align-items: center;
-  color: black;
-}
-
-.hero .hero-text {
-  margin-right: 10%;
-  text-align: right;
-  align-self: center;
-  align-items: center;
-  flex: 2;
-}
-
-.hero .hero-image {
-  position: relative;
-  z-index: 5;
-  margin-left: 10%;
-  flex: 1;
-}
-
-.red {
-  color: #e3561b !important;
-}
-
-/*----------------
- 	Our work Section
-----------------*/
-.our-work {
-  background-color: rgba(227, 86, 27, 0.05);
-  padding: 5% 15%;
-  display: block;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-}
-
-.title {
-  font-family: 'Arapey', serif;
-  font-size: 200%;
-  font-weight: lighter;
-  margin-bottom: 0;
-  color: #e3561b;
-}
-
-.title0{
-
-}
-/*----------------
- 	Facilitators Section
-----------------*/
-.Facilitators {
-  display: flex;
-  padding: 5% 15%;
-  display: block;
-  text-align: center;
-  margin: auto;
-}
-
-.fac-pics {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 5%;
-}
-.one-fac {
-  display: block;
+/* landing page rows  */
+.baner {
+  padding-top: 15%;
+  margin-bottom: -5%;
 }
 
 /*----------------
  	prizes Section
 ----------------*/
 .prizes {
-  width: 100%;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -221,10 +163,13 @@ header nav li:last-child {
   display: block;
   text-align: center;
   align-items: center;
-  flex-basis: 55%;
   height: 454px;
   color: white;
 }
+.first p {
+  color: white;
+}
+
 .second {
   padding-right: 5%;
   padding-left: 5%;
@@ -233,108 +178,127 @@ header nav li:last-child {
   align-items: center;
   padding-top: 2%;
   text-align: center;
-  background-color: rgba(227, 86, 27, 0.05);
-  flex-basis: 45%;
+  background-color: rgba(255, 213, 213, 0.37);
 }
 
-
-.other-prizes{
-  padding: 4% 100px;
+.other-prizes ul {
+  list-style: none;
 }
 
-.other-prizes ul  {
-  list-style: circle;
-}
-.other-prizes ul li {
-  padding: 0.5% 0;
-} 
-.other-prizes p{
-  text-align:left; 
- }
+.other-prizes ul li::before {content: "•";
+  padding: 0.5% 10px;
+   color: red
+  }
 
-.title{
-  color: black;
+.other-prizes p {
+  text-align: left;
 }
 
-.grey-bg{
-  background-color: rgba(216, 216, 216, 0.13);
-  padding-left:  30%;
-  
+.workshop{
+  list-style: none;
+}
+
+.workshop li::before {
+  content: "•";
+  padding: 0.5% 10px;
+   color: red
+  }
+
+
+
+.title {
+  font-family: "Arapey", serif;
+  font-weight: lighter;
+  margin-bottom: 0;
+  color: #e3561b;
+}
+
+.title2 {
+  font-family: "Arapey", serif;
+  font-size: 200%;
+  font-weight: lighter;
+  margin-bottom: 0;
+  color: #e3561b;
 }
 /*----------------
 footer
 ----------------*/
-.face2{
+
+.face2 {
   position: absolute;
-    float: left;
-    margin-top: -8%;
-    z-index: 2;
-    left: 0;
+  float: left;
+  margin-top: -8%;
+  z-index: 2;
+  left: 0;
+  bottom: 5%;
+}
+
+.face2 img{
+  background-size: 75% 50%;;
 }
 
 footer {
   display: flex;
+  flex: start-end;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: #fff;
-  background-color: #414a4f;
+  background-color: #555;
   padding: 60px 0;
   position: relative;
   z-index: 3;
 }
 
-footer ul {
-  display: flex;
-  margin-bottom: 25px;
-  font-size: 32px;
-}
-
-footer ul li {
-  margin: 0 8px;
-}
-
-footer ul li:first-child {
-  margin-left: 0;
-}
-
-footer ul li:last-child {
-  margin-right: 0;
-}
-
 footer p {
   font-size: 14px;
-  margin-bottom: 10px;
-}
-
-footer p a {
   color: #fff;
+  /* margin-bottom: 10px; */
 }
 
-@media (max-width: 700px) {
-  footer {
-    padding: 80px 15px;
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 56, 56);
+}
+
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 56, 56);' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* ----------------------MEDIA QUERIES--------------------------------- */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+
+  .logo {
+    right: 0;
+    top: -23px;
+    display: none;
+  }
+
+
+
+  .container {
+    max-width: 100%;
   }
 }
 
-
-/*----------------
- utility classes
-----------------*/
-
-.blocked {
-  display: block;
-  margin-bottom: 30px;
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .face2 {
+    display: none;
+  }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 }
 
-.border-yellow {
-  border: yellow 1px solid;
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
 
-.border-red {
-  border: red 1px solid;
-}
-
-.border-blue {
-  border: blue 1px solid;
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
 }
