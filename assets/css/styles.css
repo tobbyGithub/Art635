@@ -82,10 +82,6 @@ body {
 }
 
 
-.form-group {
-  margin-right: 10%;
-}
-
 
 /* nav syling */
 
@@ -242,6 +238,16 @@ a.btn {
   color: #e3561b;
 }
 
+.rings{
+  position:absolute;
+  z-index:21;
+  bottom:18%;
+}
+
+.overings{
+  position:absolute;
+  z-index:20;
+}
 .title2 {
   font-family: "Arapey", serif;
   font-size: 200%;
@@ -291,7 +297,7 @@ footer p {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 768px) {
- 
+
 
   .hero-image img{
     padding-top: 20%;
@@ -307,6 +313,11 @@ footer p {
   .container {
     max-width: 100%;
   }
+   
+  .first img{
+margin-bottom: 12%; 
+    width:90%;
+  }
   .face2 {
     display: none;
   }
@@ -315,19 +326,29 @@ footer p {
 .form-control {
   position: relative;
   z-index: 1;
-  width: 120%;
+  width: 100%;
   border-radius: 0;
   border-width: 0 0 1px;
   border-bottom-color:#555;
   height: auto;
-  padding: 3px 0 5px;
+  padding: 3px 0 3px;
 }
 textarea.form-control {
   height: 100%;
 }
 
 
-.form-control :focus {
+.form-control:focus {
   outline:none;
-  border-bottom:2px solid #5264AE; 
+  border-bottom:2px solid red; 
+}
+
+.grid-test{
+  height: 20px;
+  background: rgba(0,0,0,0.2)
+}
+
+.clear{
+  clear: both;
+  margin-bottom: 30px
 }
