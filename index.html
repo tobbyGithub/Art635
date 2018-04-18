@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes();?> >
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="<>php blog_info('charset')?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Art635</title>
@@ -23,7 +23,7 @@
 
     <div class="container" id="main">
 
-            <nav class="navbar navbar-light fixed-top navbar-expand-md m-0 p-4 bg">
+            <nav class="navbar navbar-light fixed-top navbar-expand-md m-0 p-4">
                     <div class="container">
                      
                             <a class="navbar-brand" href="index.html" title="Art635">   <div class="flex-row d-flex red logo">  </div></a>
@@ -34,9 +34,9 @@
                         <div class="navbar-collapse collapse" id="collapsingNavbar">
         
                             <ul class="navbar-nav ml-auto mr-4">
-        
-                                <li class="nav-item active mr-2">
-                                    <a class="nav-link red" href="index.html">Home
+
+                                <li class="nav-item mr-2">
+                                    <a class="nav-link active" href="index.html">Home
                                         
                                     </a>
                                 </li>
@@ -50,7 +50,7 @@
                                     <a class="nav-link red" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item mr-2">
-                                    <a class="nav-link red" href="enquiries.html">Enquiries</a>
+                                    <a class="nav-link" href="enquiries.html">Enquiries</a>
                                 </li>
         
                             </ul>
@@ -91,16 +91,16 @@
                     a workshop with leading African photographers. Registration for the competition is free and workshop
                     attendees will be shortlisted from the top 25 entries of the online competition. </p>
                 <br/>
-                <p>Only registered Art635 gallery photographers can participate. Register here</p>
+                <p>Only registered Art635 gallery photographers can participate. <span class="red">Register here</span></p>
 
             </div>
         </div>
         <!--/close row-->
 
 
-        <div class="row p10 thefac">
+        <div class="row p10 text-center">
 
-            <div class="row ml-auto">
+            <div class="row ml-auto arapey">
                 <div class="col-5 col-md-2 m-1 text-center">
                     <img class="mb-3" src="assets/img/fac1.png">
                     <p>Bénédicte Kurzen </p>
@@ -156,7 +156,7 @@
 
 
         <div class="row p10 text-center align-right">
-            <div class="col-12  text-left other-prizes">
+            <div class="col-12 text-left red-list">
                 <h3 class="title">Other Prizes/ Opportunities</h3>
                 <hr class="hrleft mb-3">
                 <ul class="text-left">
@@ -173,40 +173,34 @@
         </div>
         <!--/close row-->
 
-        <div class="row pt-5 pb-5 bggrey ">
-            <div class="col-md-3 col-sm-12"></div>
+        <div class="row pt-5 pb-5 bggrey">
+            <div class="col-md-3 col-sm-12  "></div>
 
-            <div class="col-md-9  col-sm-12">
+            <div class="col-md-9 col-sm-12 red-list">
                 <h3 class="title">Workshop Topics to be covered</h3>
                 <hr class="hrleft mb-3">
-                <ul class="text-left m-2 workshop">
-                      
-                      
-                     
-                       
-                       
-                       
-                    <li class="text-left m-2">  The best use of existing conditions and the art of mastering low, mid and high tones. 
+                <ul class="text-left p-2 ">    
+                    <li >  The best use of existing conditions and the art of mastering low, mid and high tones. 
                     </li>
-                    <li class="text-left m-2">  Principles of visual storytelling/photo essay.
+                    <li >  Principles of visual storytelling/photo essay.
                     </li>
-                    <li class="text-left m-2">   Understanding exposure and making exposure decisions.
+                    <li >   Understanding exposure and making exposure decisions.
                     </li>
-                    <li class="text-left m-2">   How lighting directions affect images. 
+                    <li >   How lighting directions affect images. 
                         </li>
-                        <li class="text-left m-2">  LINES: (A) Exploring the association of lines  (B) Analyzing lines (C) Forming lines. 
+                        <li >  LINES: (A) Exploring the association of lines  (B) Analyzing lines (C) Forming lines. 
                         </li>
-                        <li class="text-left m-2">   CROPPING: Altering and changing the content.
+                        <li>   CROPPING: Altering and changing the content.
                         </li>
                 </ul>
             </div>
-
         </div>
 
         <!--/close row-->
         <div class="face2">
             <img src="assets/img/face2.png" />
         </div>
+
         <div class="row p-4">
             <div class="start m-auto">
                 <a href="guidelines.html" class="btn" style="margin:auto; margin-bottom: 4%;">Start Application</a>
@@ -214,6 +208,7 @@
         </div>
         <!--/close row-->
         <footer class="row">
+            <p><a href=""> About 635</a>  |  <a href="">About CSR</a>  |   <a href="">Contact Us</a></p>
             <p>The Days of Dorcas Photography Workshop is a corporate social responsibility initiative of Guaranty Trust Bank
                 plc
             </p>
