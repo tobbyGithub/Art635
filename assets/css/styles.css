@@ -63,6 +63,8 @@ typography
     font-size: 90%;
     line-height: 1.5em;
 }
+
+
 .title {
   font-family: "Arapey", serif;
   font-weight: lighter;
@@ -79,7 +81,7 @@ typography
 }
 
 .arapey{
-
+  justify-content: space-between;
   font-family: "Arapey", serif;
   font-size: 1.2em !important; 
 }
